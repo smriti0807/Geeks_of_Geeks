@@ -1,0 +1,19 @@
+class Solution
+{
+	public:
+		string is_palindrome(int n)
+		{
+		   int c,s=0,r;
+        c=n;
+        while(n>0)
+        {
+            r=n%10;
+            s=r+(s*10);
+            n=n/10;
+        }
+        if(c==s)
+        cout<<"Yes";
+        else
+        cout<<"No"; 
+		}
+};
